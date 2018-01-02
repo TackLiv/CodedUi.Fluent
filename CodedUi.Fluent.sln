@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TackLiv.CodedUi.Fluent", "CodedUi.Fluent\TackLiv.CodedUi.Fluent.csproj", "{15545A30-5F6B-4F0B-B5B4-DD385171AF8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TackLiv.CodedUi.Fluent.Examples", "CodedUi.Fluent.Example\TackLiv.CodedUi.Fluent.Examples.csproj", "{53AE8EF5-9820-4EF9-A19C-6751F79D497A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15545A30-5F6B-4F0B-B5B4-DD385171AF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15545A30-5F6B-4F0B-B5B4-DD385171AF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15545A30-5F6B-4F0B-B5B4-DD385171AF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15545A30-5F6B-4F0B-B5B4-DD385171AF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53AE8EF5-9820-4EF9-A19C-6751F79D497A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53AE8EF5-9820-4EF9-A19C-6751F79D497A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53AE8EF5-9820-4EF9-A19C-6751F79D497A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53AE8EF5-9820-4EF9-A19C-6751F79D497A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E21BAEE1-FBCA-4314-8F25-64A3AFAC01D7}
+	EndGlobalSection
+EndGlobal
