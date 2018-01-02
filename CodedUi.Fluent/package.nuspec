@@ -4,7 +4,7 @@
         <id>$id$</id>
         <version>1.0.0-beta</version>
         <title>CodedUi.Fluent</title>
-        <authors>uzhe</authors>
+        <authors>TackLiv</authors>
         <owners>$author$</owners>
         <projectUrl>https://github.com/TackLiv/CodedUi.Fluent</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
