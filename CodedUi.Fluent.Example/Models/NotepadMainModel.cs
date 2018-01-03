@@ -9,10 +9,10 @@
     {
         public NotepadMainModel()
         {
-            this.Window = SelectHelper.SearchWindowByTitle(null, "Notepad");
+            this.Window = SelectHelper.SearchWindowByTitle("Untitled - Notepad", "Notepad");
         }
 
-        public WinEdit TextAreaEdit => this.Window.Select<WinEdit>();
+        public WinEdit TextAreaEdit => this.Window.Select<WinEdit>(15);
 
         public void Close()
         {

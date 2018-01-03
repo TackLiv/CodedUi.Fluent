@@ -4,7 +4,7 @@
     using Microsoft.VisualStudio.TestTools.UITesting;
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
 
-    public static class CodedUiExtensionsSearch
+    public static class SearchExtensions
     {
         /// <summary>
         /// Adds the search configurations in group.
@@ -99,7 +99,7 @@
         public static T GetByContainerId<T>(this UITestControl parent, int containerId, string name = null)
             where T : UITestControl, new()
         {
-            return parent.GetChild<WinWindow>(controlId: containerId.ToString()).GetChild<T>(name);
+            return parent.Select<WinWindow>(controlId: containerId.ToString()).Select<T>(name);
         }
 
         /// <summary>
@@ -118,7 +118,7 @@
         /// </param>
         /// <param name="moreSearchProperties">The more search properties.</param>
         /// <returns>The this object.</returns>
-        public static T GetChild<T>(
+        public static T Select<T>(
             this UITestControl parent,
             string name = null,
             string className = null,

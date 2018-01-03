@@ -1,10 +1,13 @@
 ﻿namespace TackLiv.CodedUi.Fluent.Extensions
 {
-    using Microsoft.VisualStudio.TestTools.UITesting;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System;
 
-    public static class CodedUiExtensionValidation
+    using Microsoft.VisualStudio.TestTools.UITesting;
+
+    public static class ValidateExtension
     {
+        private static Action<bool> assertor;
+
         /// <summary>
         /// Validates control exists or not.
         /// </summary>
@@ -35,8 +38,18 @@
                              : exists
                                  ? target.WaitForControlExist(millisecondsTimeout)
                                  : target.WaitForControlNotExist(millisecondsTimeout);
-            Assert.IsTrue(result);
+            if (assertor == null)
+            {
+                throw new InvalidOperationException("No assertor initialized. Invoke Validat");
+            }
+
+            assertor.Invoke(result);
             return target;
+        }
+
+        public static void SetAssertor(Action<bool> assertResultTrue)
+        {
+            assertor = assertResultTrue;
         }
     }
 }

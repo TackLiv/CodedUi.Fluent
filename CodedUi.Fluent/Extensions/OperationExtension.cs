@@ -6,7 +6,7 @@
     using Microsoft.VisualStudio.TestTools.UITest.Input;
     using Microsoft.VisualStudio.TestTools.UITesting;
 
-    public static class CodedUiExtensionOperation
+    public static class OperationExtension
     {
         /// <summary>
         /// Clicks the specified button.
@@ -93,12 +93,13 @@
             if (delay > 0)
             {
                 Keyboard.SendKeysDelay = delay;
+
+                // Keyboard delay would apply after first key
+                // Here add extra delay before first key.
+                // This is for scenario where CodedUI Engine can not control.
+                Playback.Wait(delay);
             }
 
-            // Keyboard delay would apply after first key
-            // Here add extra delay before first key.
-            // This is for scenario where CodedUI Engine can not control.
-            Playback.Wait(delay);
             Keyboard.SendKeys(target, text, (System.Windows.Input.ModifierKeys)modKey);
             Keyboard.SendKeysDelay = stash;
 

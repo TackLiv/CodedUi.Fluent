@@ -2,15 +2,15 @@
 <package>
     <metadata>
         <id>$id$</id>
-        <version>1.0.0-beta</version>
+        <version>0.0.1</version>
         <title>CodedUi.Fluent</title>
-        <authors>TackLiv</authors>
+        <authors>uzhe</authors>
         <owners>$author$</owners>
         <projectUrl>https://github.com/TackLiv/CodedUi.Fluent</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>$description$</description>
         <releaseNotes>
-            Init beta.
+            Adjusted names.
         </releaseNotes>
         <copyright>$copyright$</copyright>
         <tags></tags>

@@ -28,7 +28,7 @@
 
             // 2 Type BlaBlaBla in text area
             // -> Verify text exists
-            notepadMain.TextAreaEdit.Text = "BlaBlaBla";
+            notepadMain.TextAreaEdit.SendKeys("BlaBlaBla");
             Assert.IsTrue(notepadMain.TextAreaEdit.Text.Contains("BlaBlaBla"));
 
             // 5 Close notepad by click Close button.
@@ -50,6 +50,7 @@
         [TestInitialize]
         public void DoTestInit()
         {
+            ValidateExtension.SetAssertor(Assert.IsTrue);
             app = ApplicationUnderTest.Launch(@"C:\Windows\notepad.exe");
         }
     }
