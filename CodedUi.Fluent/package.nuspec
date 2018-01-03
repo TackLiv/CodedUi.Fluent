@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>$id$</id>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
         <title>CodedUi.Fluent</title>
         <authors>uzhe</authors>
         <owners>$author$</owners>
@@ -10,7 +10,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>$description$</description>
         <releaseNotes>
-            Adjusted names.
+            Moved dependency of Point class to System.Drawing.  
         </releaseNotes>
         <copyright>$copyright$</copyright>
         <tags></tags>

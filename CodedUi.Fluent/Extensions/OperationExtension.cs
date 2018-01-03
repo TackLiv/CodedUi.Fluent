@@ -1,6 +1,7 @@
 ﻿namespace TackLiv.CodedUi.Fluent.Extensions
 {
     using System;
+    using System.Drawing;
 
     using Microsoft.VisualStudio.TestTools.UITest.Common;
     using Microsoft.VisualStudio.TestTools.UITest.Input;
@@ -111,12 +112,12 @@
             MouseButtons button,
             ModifierKeys modKey,
             Point? relativeCoordinate,
-            Action<System.Windows.Forms.MouseButtons, System.Windows.Input.ModifierKeys, System.Drawing.Point> clickCoordinate,
+            Action<System.Windows.Forms.MouseButtons, System.Windows.Input.ModifierKeys, Point> clickCoordinate,
             Action<UITestControl, System.Windows.Forms.MouseButtons> clickControl)
         {
             if (relativeCoordinate != null)
             {
-                var point = new System.Drawing.Point(
+                var point = new Point(
                     target.BoundingRectangle.X + relativeCoordinate.Value.X,
                     target.BoundingRectangle.Y + relativeCoordinate.Value.Y);
                 clickCoordinate.Invoke(
